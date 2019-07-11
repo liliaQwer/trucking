@@ -11,7 +11,7 @@
 
     <artifactId>web</artifactId>
 
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <properties>
         <org.iTechArt.core>1.0-SNAPSHOT</org.iTechArt.core>
@@ -19,24 +19,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.iTechArt</groupId>
-            <artifactId>core</artifactId>
-            <version>${org.iTechArt.core}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mustache</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
