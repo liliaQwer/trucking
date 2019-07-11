@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страница логина</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <h1>Кастомная страница логина</h1>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}">
+    <div>
+        <label for="username">Имя пользователя</label>
+        <input type="text" name="username" id="username"/>
+    </div>
+    <div>
+        <label for="password">Пароль</label>
+        <input type="password" name="password" id="password"/>
+    </div>
+    <div>
+        <button type="submit">Войти</button>
+    </div>
+</form>
+</body>
+</html>
